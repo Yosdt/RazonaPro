@@ -1,0 +1,10 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "preserve",  // si estás utilizando React o JSX
+    "module": "ESNext",
+    "target": "ESNext"
+  },
+  "include": ["src"]
+}
