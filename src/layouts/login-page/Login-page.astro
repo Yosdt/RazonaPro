@@ -1,0 +1,119 @@
+---
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body class="bg-slate-50 w-full h-[100vh] flex justify-center items-center ">
+        
+        <div id="container" class="bg-white w-[800px] h-[500px] flex relative rounded-xl">
+            <div class=" w-full overflow-hidden">
+                <form action="" id="sign-in" class="b h-full flex flex-col justify-center items-center transition-transform duration-500 ease-in">
+                    <h2 class="text-3xl mb-5">Iniciar Sesion</h2>
+                    <div class="flex gap-3 mb-6">
+                        <ion-icon class="border-[1px] border-gray-300 rounded-md p-2 cursor-pointer" name="logo-twitch"></ion-icon>
+                        <ion-icon class="border-[1px] border-gray-300 rounded-md p-2 cursor-pointer" name="logo-twitter"></ion-icon>
+                        <ion-icon class="border-[1px] border-gray-300 rounded-md p-2 cursor-pointer" name="logo-instagram"></ion-icon>
+                        <ion-icon class="border-[1px] border-gray-300 rounded-md p-2 cursor-pointer" name="logo-google"></ion-icon>
+                    </div>
+                    <span class="text-xs mb-4">Use su correo y contraseña</span>
+                    <div class=" w-[300px] h-10 mb-[10px] flex justify-center items-center gap-2 px-4 bg-slate-100">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input class="w-full h-full bg-slate-100 border-none outline-none" type="text" placeholder="Email">
+                    </div>
+                    <div class=" w-[300px] h-10 mb-[10px] flex justify-center items-center gap-2 px-4 bg-slate-100">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input class="w-full h-full bg-slate-100 border-none outline-none" type="password" placeholder="Password">
+                    </div>
+                    <a class="text-black text-[14px] mb-5 mt-1" href="#">Olvidaste tu contraseña</a>
+                    <button class="w-[170px] h-11 text-[15px] border-none rounded-md cursor-pointer mt-[10px] bg-blue-500 text-white">INICIAR SESION</button>
+                </form>
+            </div>
+            <div class=" w-full overflow-hidden">
+                <form action="" id="sign-up" class="h-full flex flex-col justify-center items-center transition-transform duration-500 ease-in">
+                    <h2 class="text-3xl mb-5">Registrarse</h2>
+                    <div class="flex gap-3 mb-6">
+                        <ion-icon class="border-[1px] border-gray-300 rounded-md p-2 cursor-pointer" name="logo-twitch"></ion-icon>
+                        <ion-icon class="border-[1px] border-gray-300 rounded-md p-2 cursor-pointer" name="logo-twitter"></ion-icon>
+                        <ion-icon class="border-[1px] border-gray-300 rounded-md p-2 cursor-pointer" name="logo-instagram"></ion-icon>
+                        <ion-icon class="border-[1px] border-gray-300 rounded-md p-2 cursor-pointer" name="logo-google"></ion-icon>
+                    </div>
+                    <span class="text-xs mb-4">Use su Correo Electronico para Registrarse</span>
+                    <div class=" w-[300px] h-10 mb-[10px] flex justify-center items-center gap-2 px-4 bg-slate-100">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input class="w-full h-full bg-slate-100 border-none outline-none" type="text" placeholder="Nombre">
+                    </div>
+                    <div class=" w-[300px] h-10 mb-[10px] flex justify-center items-center gap-2 px-4 bg-slate-100">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input class="w-full h-full bg-slate-100 border-none outline-none" type="text" placeholder="Email">
+                    </div>
+                    <div class=" w-[300px] h-10 mb-[10px] flex justify-center items-center gap-2 px-4 bg-slate-100">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input class="w-full h-full bg-slate-100 border-none outline-none" type="password" placeholder="Password">
+                    </div>
+                    <button class="w-[170px] h-11 text-[15px] border-none rounded-md cursor-pointer mt-[10px] bg-blue-500 text-white">REGISTRARSE</button>
+                </form>
+            </div>
+            <div id="container-welcome" class=" transition-all duration-500 ease-in-out overflow-hidden bg-blue-500 absolute w-1/2 h-full flex items-center transform translate-x-full ">
+                <div id="welcome-sign-up" class="transition-transform duration-500 ease-in-out absolute flex flex-col items-center gap-5 px-[50px] text-white"> 
+                    <h3 class="text-[40px]">¡Bienvenido!</h3>
+                    <p class="text-[14px] text-center">ingrese sus datos personales para usar todas la funciones del sitio</p>
+                    <button id="inicio" class=" border-2 border-white w-[170px] h-11 text-[15px] rounded-md cursor-pointer mt-[10px] bg-transparent text-white">Registrarse</button>
+                </div>
+                <div id="welcome-sign-in" class="transition-transform duration-500 ease-in-out absolute flex flex-col items-center gap-5 px-[50px] text-white transform translate-x-full">
+                    <h3 class="text-[40px]">¡Hola!</h3>
+                    <p class="text-[14px] text-center">Registrese con sus datos personales para usar todas las funciones del sitio</p>
+                    <button id="registro" class="border-2 border-white w-[170px] h-11 text-[15px] rounded-md cursor-pointer mt-[10px] bg-transparent text-white">Iniciar Sesion</button>
+                </div>
+            </div>
+        </div>
+    
+
+        <script src="/src/layouts/login-page/script-login.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <slot />
+    </body>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    *{
+        font-family: "Montserrat", sans-serif;
+
+    }
+    
+    #sign-up{
+        transform: translateX(-100%);
+    }
+    #container.toggle #sign-in{
+        transform: translateX(100%);
+    }
+    #container.toggle #sign-up{
+        transform: translateX(0);
+    }
+    #container.toggle #welcome-sign-in{
+        transform: translate(0);
+    }
+    #container.toggle #welcome-sign-up{
+        transform: translate(-100%);
+    }
+    #container.toggle #container-welcome{
+        transform: translate(0);
+        border-radius: 3% 50% 50% 3%;
+        background-color: #3AA8AD;
+    }
+    #container-welcome{
+        border-radius: 50% 3% 3% 50%;
+    }
+    #container{
+        box-shadow: 0 0 10px rgb(0, 0,0,0.3);
+    }
+    </style>

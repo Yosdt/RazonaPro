@@ -1,0 +1,351 @@
+---
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body class="h-[100vh] w-full bg-cyan-400">
+        <div
+            id="barra-lateral"
+            class="barra-lateral w-64 h-full p-4 bg-white transition-all duration-500 ease-in-out overflow-hidden fixed flex flex-col justify-between" >
+            <div>
+                <div class="nombre-pagina flex w-full h-11 items-center mb-10">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-10 min-w-12 cursor-pointer"
+                        id="home"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+                        ></path>
+                    </svg>
+                    <span
+                        id="text"
+                        class="text-2xl text-left ml-1 opacity-100 transition-opacity duration-500 ease-in-out"
+                        >RazonaPro</span
+                    >
+                </div>
+                <a href="/login">
+                    <button
+                    class="w-full h-11 flex items-center justify-center border-none rounded bg-slate-200 mb-5">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-5 min-w-12"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15"></path>
+                    </svg>
+                    <span
+                        class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                    >
+                        Iniciar sesion
+                    </span>
+                </button>
+                </a>
+            </div>
+            <nav id="navegacion" class="h-full overflow-y-auto overflow-x-hidden">
+                <ul>
+                    <li class="list-none flex mb-1">
+                        <a
+                            class="flex w-full h-11 items-center rounded hover:bg-slate-700 hover:text-white"
+                            href=" "
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 min-w-12 text-xl"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                ></path>
+                            </svg>
+                            <span
+                                class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                            >
+                                inbox
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-none flex mb-1">
+                        <a
+                            class="flex w-full h-11 items-center rounded hover:bg-slate-700 hover:text-white"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 min-w-12 text-xl"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                ></path>
+                            </svg>
+                            <span
+                                class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                            >
+                                inbox
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-none flex mb-1">
+                        <a
+                            class="flex w-full h-11 items-center rounded hover:bg-slate-700 hover:text-white"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 min-w-12 text-xl"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                ></path>
+                            </svg>
+                            <span
+                                class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                            >
+                                inbox
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-none flex mb-1">
+                        <a
+                            class="flex w-full h-11 items-center rounded hover:bg-slate-700 hover:text-white"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 min-w-12 text-xl"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                ></path>
+                            </svg>
+                            <span
+                                class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                            >
+                                inbox
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-none flex mb-1">
+                        <a
+                            class="flex w-full h-11 items-center rounded hover:bg-slate-700 hover:text-white"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 min-w-12 text-xl"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                ></path>
+                            </svg>
+                            <span
+                                class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                            >
+                                inbox
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-none flex mb-1">
+                        <a
+                            class="flex w-full h-11 items-center rounded hover:bg-slate-700 hover:text-white"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 min-w-12 text-xl"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                ></path>
+                            </svg>
+                            <span
+                                class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                            >
+                                inbox
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-none flex mb-1">
+                        <a
+                            class="flex w-full h-11 items-center rounded hover:bg-slate-700 hover:text-white"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 min-w-12 text-xl"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                ></path>
+                            </svg>
+                            <span
+                                class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                            >
+                                inbox
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-none flex mb-1">
+                        <a
+                            class="flex w-full h-11 items-center rounded hover:bg-slate-700 hover:text-white"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 min-w-12 text-xl"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                ></path>
+                            </svg>
+                            <span
+                                class="text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]"
+                            >
+                                inbox
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <div class="w-full h-[1px] bg-slate-400 mb-[40px]"></div>
+            <div class=" w-full flex">
+                <img
+                    class="w-[50px] min-w-[50px] rounded-[10px]"
+                    src="/public/perfil.jpg"
+                    alt=""
+                />
+                <div
+                    class=" w-full flex items-center justify-between overflow-hidden"
+                >
+                    <div
+                        class=" w-full flex flex-col ml-[5px]"
+                    >
+                        <span class="text-[15px] font-semibold text-xl text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]">fabian</span>
+                        <span class="text-[15px] text-xs text-left transition-all duration-500 ease-in-out opacity-100 whitespace-nowrap w-[100px]">fabian@ufpso.edu.co</span>
+                    </div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6 "
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+            </div>
+        </div>
+        <header id="header" class="bg-white ml-64 transition-all duration-500 ease-in-out h-11">
+            <div class="flex justify-between items-center px-4 h-11">
+                <div>
+                    <img class="w-[80px]" src="/public/logo.png" alt="">
+                </div>
+                <nav class="flex h-full">
+                    <a class="flex items-center h-full px-2 hover:bg-black hover:text-white transition-colors" href="">Inicio</a>
+                    <a class="flex items-center h-full px-2 hover:bg-black hover:text-white transition-colors" href="">Nosotros</a>
+                    <a class="flex items-center h-full px-2 hover:bg-black hover:text-white transition-colors" href="">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <script src="/src/layouts/script.js"></script>
+        <slot />
+    </body>
+</html>
+<style>
+    .mini-barra-lateral {
+        width: 80px;
+    }
+    .mini-main{
+        margin-left: 80px;
+    }
+    .oculto {
+        opacity: 0;
+        width: 0;
+    }
+    #navegacion::-webkit-scrollbar{
+        width: 5px;
+        
+    }
+    #navegacion::-webkit-scrollbar-thumb{
+        background-color: black;
+        border-radius: 5px;
+    }
+    #navegacion::-webkit-scrollbar-thumb:hover{
+        background-color: red;
+    }
+</style>
