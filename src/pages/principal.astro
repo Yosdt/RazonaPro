@@ -1,0 +1,73 @@
+---
+import Menu2 from "../layouts/Menu2.astro";
+import { Icon } from 'astro-icon/components'
+---
+
+<Menu2 title="RazonaPro">
+    <section
+        id="main"
+        class="ml-64 p-5 transition-all duration-500 ease-in-out">
+            <section class="w-full p-10 bg-white rounded">
+                <div class="flex gap-10">
+                    <div class="fondo w-full h-[230px] items-center justify-center flex p-5 rounded-lg">
+                        <div>
+                            <h1 class="break-words text-white font-bold text-3xl">Bienvenido a RazonaPro Fabian 😄</h1>
+                            <h1 class="break-words text-white text-xl pt-5">¡Tu camino al éxito en el Saber Pro comienza aquí!</h1>
+                        </div>
+                        <img class="w-[150] h-[125px]" src="/public/Educación Online.png" alt="">
+                    </div>
+                    <div class="fondo2 w-full h-[230px] items-center flex  rounded-lg">
+                        <div class="w-full p-5">
+                            <h1 class="break-words text-white font-bold text-3xl">Redes Sociales</h1>
+                            <h1 class="break-words text-white text-xl pt-5">¡Siguenos!</h1>
+                            <div class="flex  w-auto justify-between pt-10 px-10">
+                                <a href="#" class=" h-12 bg-blue-700 w-[70px] items-center justify-center flex">
+                                    <Icon class="text-white size-8" name="mdi:facebook" />
+                                </a>
+                                <a href="#" class=" h-12 bg-black w-[70px] items-center justify-center flex">
+                                    <Icon class="text-white size-5" name="prime:twitter" />
+                                </a>
+                                <a href="#" class=" h-12 bg-purple-600 w-[70px] items-center justify-center flex">
+                                    <Icon class="text-white size-8" name="mdi:instagram" />
+                                </a>
+                                <a href="#" class=" h-12 bg-red-600 w-[70px] items-center justify-center flex">
+                                    <Icon class="text-white size-8" name="mdi:youtube" />
+                                </a>               
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </section>    
+    </section>
+</Menu2>
+<script src="/src/layouts/script.js"></script>
+<style>
+    .mini-main-i {
+        margin-left: 80px;
+    }
+    .fondo{
+        background: hsla(212, 100%, 71%, 1);
+
+background: linear-gradient(45deg, hsla(212, 100%, 71%, 1) 0%, hsla(240, 100%, 52%, 1) 49%, hsla(212, 100%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(212, 100%, 71%, 1) 0%, hsla(240, 100%, 52%, 1) 49%, hsla(212, 100%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(212, 100%, 71%, 1) 0%, hsla(240, 100%, 52%, 1) 49%, hsla(212, 100%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6CB0FF", endColorstr="#0A0AFF", GradientType=1 );
+    }
+    .fondo2{
+        background: hsla(336, 100%, 50%, 1);
+
+background: radial-gradient(circle, hsla(336, 100%, 50%, 1) 0%, hsla(310, 96%, 30%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(336, 100%, 50%, 1) 0%, hsla(310, 96%, 30%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(336, 100%, 50%, 1) 0%, hsla(310, 96%, 30%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0066", endColorstr="#96037E", GradientType=1 );
+    }
+</style>
+
