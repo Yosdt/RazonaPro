@@ -12,3 +12,11 @@ home.addEventListener("click",()=>{
         span.classList.toggle("oculto")
     });
 })
+// document.addEventListener("DOMContentLoaded", function () {
+//     barralateral.classList.toggle("mini-barra-lateral");
+//     main.classList.toggle("mini-main-i");
+//     header.classList.toggle("mini-main");
+//     spans.forEach((span)=>{
+//         span.classList.toggle("oculto")
+//     });
+// });
