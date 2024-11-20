@@ -5,25 +5,30 @@ import Menu from "../layouts/Menu.astro";
 <Menu title="RazonaPro">
   <section
     id="main"
-    class="ml-64 p-5 transition-all duration-500 ease-in-out bg-[#0d0d0d]"
+    class="ml-64 p-5 transition-all duration-500 ease-in-out bg-black"
   >
     <body class="bg-transparent m-0 p-0">
-      <section class="bg-[#081421] h-[700px]">
+      <section class="bg-gradient-to-b from-[#4CB0D4] to-[#1E3A5F] h-[750px]">
         <div class="text-white text-7xl pt-10 text-center">
           El poder de la IA en tu aprendizaje
         </div>
-        <div class="flex items-end justify-end mt-[100px] mr-[100px]">
-          <img src="/public/icono.png" class="w-[300px]" alt="" />
+        <div class="flex justify-between">
+          <div class="flex items-start justify-start mt-[150px] ml-[100px]">
+            <img src="/public/alumnos.png" class="w-[300px]" alt="" />
+          </div>
+          <div class="flex items-end justify-end mt-[100px] mr-[100px]">
+            <img src="/public/icono.png" class="w-[300px]" alt="" />
+          </div>
         </div>
         <div class="flex items-center justify-center -mt-[200px]">
             <a href="#" class="bg-blue-500 p-4 text-3xl text-white rounded-full hover:bg-blue-400">EMPEZAR PRUEBA</a>
         </div>
       </section>
-      <div class="bg-black w-full h-10">
+      <div class="bg-black w-full h-5">
 
       </div>
       <section
-        class="bg-[#081421] min-h-screen flex items-center justify-center"
+        class="bg-gradient-to-b from-[#1f3c61] to-[#081421] min-h-screen flex items-center justify-center"
       >
         <div class="relative w-full max-w-6xl px-12">
           <div
@@ -34,8 +39,8 @@ import Menu from "../layouts/Menu.astro";
               class="carousel-item absolute transition-all duration-500 w-64 h-80"
             >
               <img
-                src="/public/icono.png"
-                alt="Innovación 1"
+                src="/public/innovacion.png"
+                alt="Innovación"
                 class="w-full h-full object-cover rounded-2xl"
               />
               <p
@@ -51,8 +56,8 @@ import Menu from "../layouts/Menu.astro";
               class="carousel-item absolute transition-all duration-500 w-64 h-80"
             >
               <img
-                src="/public/icono.png"
-                alt="Innovación 2"
+                src="/public/IA.png"
+                alt="IA"
                 class="w-full h-full object-cover rounded-2xl"
               />
               <p
@@ -68,8 +73,8 @@ import Menu from "../layouts/Menu.astro";
               class="carousel-item absolute transition-all duration-500 w-64 h-80"
             >
               <img
-                src="/public/icono.png"
-                alt="Innovación 3"
+                src="/public/interactivo.png"
+                alt="Interactivp"
                 class="w-full h-full object-cover rounded-2xl"
               />
               <p
@@ -181,6 +186,44 @@ import Menu from "../layouts/Menu.astro";
             transition: all 0.5s ease-in-out;
           }
         </style>
+      </section>
+      <div class="bg-black w-full h-5"></div>
+      <section class="w-full h-[1000px] bg-gradient-to-b from-[#081421] to-[#406891]">
+        <div class="text-center text-white text-7xl pt-[100px]">
+          ¿Porque nació Razona Pro?
+        </div>
+        <div class="flex justify-between items-center pt-[180px] px-[200px] gap-[100px]">
+          <div class="flex items-center justify-center size-[300px] bg-white rounded-full">
+            <img src="/public/imagen-1.png" alt="">
+          </div>
+          <div class="flex items-center justify-center size-[300px] bg-white rounded-full">
+            <img src="/public/imagen-2.png" alt="">
+          </div>
+          <div class="flex items-center justify-center size-[300px] bg-white rounded-full">
+            <img src="/public/UFPSo.png" class="w-[200px]" alt="">
+          </div>
+        </div>
+        <div class="flex justify-between px-[200px] mt-4">
+          <div class="text-center text-4xl text-yellow-400 ml-[60px]">Desinterés</div>
+          <div class="text-center text-4xl text-yellow-400 ml-[60px]">Ranking</div>
+          <div class="text-center text-4xl text-yellow-400 mr-[60px] pl-[30px]">Acreditación</div>
+        </div>
+        <div class="flex justify-between px-[200px] mt-4">
+          <div class="text-white">la falta de interés por parte de los estudiantes <br>
+            en lograr buenos resultados en sus pruebas<br>
+            Saberpro en parte es debido a la falta de<br>
+            preparación interactiva y reciproca</div>
+          <div class="text-white -ml-[300px]">la universidad francisco de paula santander<br>
+            seccional Ocaña esta ubicada en el puesto<br>
+            140 con un promedio en el 2023 de 141,2<br> puntos
+            por de bajo de la media nacional<br>
+            preparación interactiva y reciproca</div>
+          <div class="text-white -ml-[300px] -mr-[30px]">Posicionar a la institucion como lider en <br>
+            innovacion educativa al ofrecer herramientas<br>
+            tecnologicas avanzadas, como una app <br>
+            impulsada por IA para garantizar un aprendizaje<br>
+            eficiente y efectivo para las pruebas saberpro</div>
+        </div>
       </section>
     </body>
   </section>
