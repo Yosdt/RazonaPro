@@ -3,100 +3,234 @@ import Menu from "../layouts/Menu.astro";
 ---
 
 <Menu title="RazonaPro">
-    <section
-        id="main"
-        class="ml-64 p-5 transition-all duration-500 ease-in-out bg-[#0d0d0d]">
-        <body class="bg-white">
-            <main class="flex flex-col items-center">
-                <section class="w-full relative bg-[url('/fondo.jpg')] bg-cover bg-no-repeat bg-center py-16 text-center">
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-                    <div class="relative z-10">
-                      <img class="mb-4 mx-auto max-w-[33%]" src="/razonapro-nobg.png" alt="RazonaPro">
-                      <p class="mb-8 text-lg text-white">
-                        Plataforma de Gestión de Conocimiento y Aprendizaje Organizacional
-                      </p>
-                    </div>
-                  </section>
-        
-                <section class="w-full max-w-4xl px-4 py-16">
-                    <h2 class="mb-8 text-center text-3xl font-bold text-white">
-                        Practica y aprende para las pruebas Saber Pro
-                    </h2>
-                    <div class="grid gap-8 md:grid-cols-3">
-                        <div class="flex flex-col items-center text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-4 h-12 w-12 text-[#0d6efd]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                            </svg>
-                            <h3 class="mb-2 text-xl font-semibold text-white">Centraliza</h3>
-                            <p class="text-white">Toda la información en un solo lugar</p>
-                        </div>
-                        <div class="flex flex-col items-center text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-4 h-12 w-12 text-[#0d6efd]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 2L15 22l-4-8-8-4 22-8z"></path>
-                            </svg>
-                            <h3 class="mb-2 text-xl font-semibold text-white">Optimiza</h3>
-                            <p class="text-white">Los procesos de tu organización</p>
-                        </div>
-                        <div class="flex flex-col items-center text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-4 h-12 w-12 text-[#0d6efd]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                            <h3 class="mb-2 text-xl font-semibold text-white">Mejora</h3>
-                            <p class="text-white">La productividad de tus colaboradores</p>
-                        </div>
-                    </div>
-                </section>
-        
-                <section class="w-full bg-[#f8f9fa] py-16">
-                    <div class="mx-auto max-w-4xl px-4">
-                        <h2 class="mb-8 text-center text-3xl font-bold text-[#212529]">
-                            ¿Cómo funciona Razona-Pro?
-                        </h2>
-                        <ul class="space-y-4">
-                            {[
-                                "Centraliza toda la información de tu organización",
-                                "Organiza el conocimiento por áreas, procesos y temas",
-                                "Crea y gestiona cursos de formación",
-                                "Evalúa el conocimiento de tus colaboradores",
-                                "Genera informes y estadísticas",
-                            ].map((item) => (
-                                <li class="flex items-center text-[#212529]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-5 w-5 text-[#0d6efd]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 18 15 12 9 6"></polyline>
-                                    </svg>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </section>
-        
-                <section class="w-full py-16">
-                    <div class="mx-auto max-w-4xl px-4 text-center">
-                        <h2 class="mb-8 text-3xl font-bold text-white">¿Listo para empezar?</h2>
-                        <p class="mb-8 text-lg text-white">
-                            Solicita una demostración gratuita y descubre cómo Red Saber puede ayudarte a gestionar el conocimiento
-                            de tu organización
-                        </p>
-                        <div class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                            <input class="max-w-xs px-4 py-2 border border-gray-300 rounded" placeholder="Ingresa tu correo electrónico" type="email" />
-                            <button class="bg-[#0d6efd] text-white hover:bg-[#0b5ed7] px-4 py-2 rounded">Solicitar Demo</button>
-                        </div>
-                    </div>
-                </section>
-            </main>
-        
-            <footer class="bg-[#f8f9fa] py-8 text-center text-[#6c757d]">
-                <p>&copy; 2024 Razona-Pro. Todos los derechos reservados.</p>
-            </footer>
-        </body>
-    </section>
-</Menu>
-<script src="/src/layouts/script.js"></script>
-<style>
+  <section
+    id="main"
+    class="ml-64 p-5 transition-all duration-500 ease-in-out bg-black"
+  >
+    <body class="bg-transparent m-0 p-0">
+      <section class="bg-gradient-to-b from-[#4CB0D4] to-[#1E3A5F] h-[750px]">
+        <div class="text-white text-7xl pt-10 text-center">
+          El poder de la IA en tu aprendizaje
+        </div>
+        <div class="flex justify-between">
+          <div class="flex items-start justify-start mt-[150px] ml-[100px]">
+            <img src="/public/alumnos.png" class="w-[300px]" alt="" />
+          </div>
+          <div class="flex items-end justify-end mt-[100px] mr-[100px]">
+            <img src="/public/icono.png" class="w-[300px]" alt="" />
+          </div>
+        </div>
+        <div class="flex items-center justify-center -mt-[200px]">
+            <a href="#" class="bg-blue-500 p-4 text-3xl text-white rounded-full hover:bg-blue-400">EMPEZAR PRUEBA</a>
+        </div>
+      </section>
+      <div class="bg-black w-full h-5">
+
+      </div>
+      <section
+        class="bg-gradient-to-b from-[#1f3c61] to-[#081421] min-h-screen flex items-center justify-center"
+      >
+        <div class="relative w-full max-w-6xl px-12">
+          <div
+            class="relative flex items-center justify-center h-[500px]"
+            id="carousel"
+          >
+            <div
+              class="carousel-item absolute transition-all duration-500 w-64 h-80"
+            >
+              <img
+                src="/public/innovacion.png"
+                alt="Innovación"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+              <p
+                class="text-yellow-300 text-center mt-4 opacity-0 transition-opacity duration-300"
+              >
+                INNOVACION <br>
+                <span class="text-white"> PRESTAMOS INNOVACION CONFIABLE Y ENFOCADA AL FUTURO. NOS ASEGURAMOS DE QUE TODAS NUESTRAS CLASES SEAN INTERACTIVAS Y DIDCATIVAS
+                </span>
+              </p>
+            </div>
+
+            <div
+              class="carousel-item absolute transition-all duration-500 w-64 h-80"
+            >
+              <img
+                src="/public/IA.png"
+                alt="IA"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+              <p
+                class="text-yellow-300 text-center mt-4 opacity-0 transition-opacity duration-300"
+              >
+                IA <br>
+                <span class="text-white"> nuestra inteligencia artificial se adapta perfectamente a tus fallas comunes y te recomienda areas que debes mejorar, asi mismo, se enfoca en tu estudio continuo, sin dejar lagunas de aprendizaje
+                </span>
+              </p>
+            </div>
+
+            <div
+              class="carousel-item absolute transition-all duration-500 w-64 h-80"
+            >
+              <img
+                src="/public/interactivo.png"
+                alt="Interactivp"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+              <p
+                class="text-yellow-300 text-center mt-4 opacity-0 transition-opacity duration-300"
+              >
+                INTERACTIVO <br>
+                <span class="text-white"> CONTAMOS CON DIFERENTES ESTRATEGIAS INTERACTIVAS QUE NOS PERMITEN INTERIORIZR MAS EL CONOCIMIENTO EN LOS ESTUDIANTES, COMPITIENDO SANAMENTE Y DIVIRTIENDOSE
+                </span>
+              </p>
+            </div>
+
+            <button
+              class="absolute left-0 w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+              id="prevBtn"
+            >
+              <span class="sr-only">Anterior</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+
+            <button
+              class="absolute right-0 w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+              id="nextBtn"
+            >
+              <span class="sr-only">Siguiente</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <script>
+          const carousel = document.getElementById("carousel");
+          const items = document.querySelectorAll(".carousel-item");
+          const prevBtn = document.getElementById("prevBtn");
+          const nextBtn = document.getElementById("nextBtn");
+          let currentIndex = 0;
+          const totalItems = items.length;
+          const radius = 250;
+
+          function updateCarousel() {
+            items.forEach((item, index) => {
+              const angle =
+                ((index - currentIndex + totalItems) % totalItems) *
+                ((2 * Math.PI) / totalItems);
+              const x = Math.sin(angle) * radius;
+              const z = Math.cos(angle) * radius - radius;
+
+              item.style.transform = `translateX(${x}px) translateZ(${z}px)`;
+
+              if (index === currentIndex) {
+                item.classList.remove("scale-75", "opacity-50");
+                item.classList.add("scale-100", "z-10");
+                item.querySelector("p").classList.remove("opacity-0");
+                item.querySelector("p").classList.add("opacity-100");
+              } else {
+                item.classList.add("scale-75", "opacity-50");
+                item.classList.remove("scale-100", "z-10");
+                item.querySelector("p").classList.add("opacity-0");
+                item.querySelector("p").classList.remove("opacity-100");
+              }
+            });
+          }
+
+          function rotateCarousel(direction) {
+            currentIndex = (currentIndex - direction + totalItems) % totalItems;
+            updateCarousel();
+          }
+
+          prevBtn?.addEventListener("click", () => rotateCarousel(1));
+          nextBtn?.addEventListener("click", () => rotateCarousel(-1));
+
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowLeft") rotateCarousel(1);
+            if (e.key === "ArrowRight") rotateCarousel(-1);
+          });
+
+          updateCarousel();
+        </script>
+
+        <style>
+          #carousel {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+          }
+          .carousel-item {
+            transition: all 0.5s ease-in-out;
+          }
+        </style>
+      </section>
+      <div class="bg-black w-full h-5"></div>
+      <section class="w-full h-[1000px] bg-gradient-to-b from-[#081421] to-[#406891]">
+        <div class="text-center text-white text-7xl pt-[100px]">
+          ¿Porque nació Razona Pro?
+        </div>
+        <div class="flex justify-between items-center pt-[180px] px-[200px] gap-[100px]">
+          <div class="flex items-center justify-center size-[300px] bg-white rounded-full">
+            <img src="/public/imagen-1.png" alt="">
+          </div>
+          <div class="flex items-center justify-center size-[300px] bg-white rounded-full">
+            <img src="/public/imagen-2.png" alt="">
+          </div>
+          <div class="flex items-center justify-center size-[300px] bg-white rounded-full">
+            <img src="/public/UFPSo.png" class="w-[200px]" alt="">
+          </div>
+        </div>
+        <div class="flex justify-between px-[200px] mt-4">
+          <div class="text-center text-4xl text-yellow-400 ml-[60px]">Desinterés</div>
+          <div class="text-center text-4xl text-yellow-400 ml-[60px]">Ranking</div>
+          <div class="text-center text-4xl text-yellow-400 mr-[60px] pl-[30px]">Acreditación</div>
+        </div>
+        <div class="flex justify-between px-[200px] mt-4">
+          <div class="text-white">la falta de interés por parte de los estudiantes <br>
+            en lograr buenos resultados en sus pruebas<br>
+            Saberpro en parte es debido a la falta de<br>
+            preparación interactiva y reciproca</div>
+          <div class="text-white -ml-[300px]">la universidad francisco de paula santander<br>
+            seccional Ocaña esta ubicada en el puesto<br>
+            140 con un promedio en el 2023 de 141,2<br> puntos
+            por de bajo de la media nacional<br>
+            preparación interactiva y reciproca</div>
+          <div class="text-white -ml-[300px] -mr-[30px]">Posicionar a la institucion como lider en <br>
+            innovacion educativa al ofrecer herramientas<br>
+            tecnologicas avanzadas, como una app <br>
+            impulsada por IA para garantizar un aprendizaje<br>
+            eficiente y efectivo para las pruebas saberpro</div>
+        </div>
+      </section>
+    </body>
+  </section>
+  <script src="/src/layouts/script.js"></script>
+  <style>
     .mini-main-i {
-        margin-left: 80px;
+      margin-left: 80px;
     }
-</style>
+  </style>
+</Menu>
