@@ -6,148 +6,96 @@ import { Icon } from 'astro-icon/components'
 <Menu2 title="RazonaPro">
     <section
         id="main"
-        class="ml-64 p-5 transition-all duration-500 ease-in-out">
+        class="ml-64 p-5 transition-all duration-500 ease-in-out ">
             <section class="w-full p-10 bg-white rounded">
-                <div class="text-center">
-                    <h1 class="text-3xl font-semibold">Módulos de estudio</h1>
+                <div class="w-full text-center mb-10">
+                    <h1 class="text-4xl font-bold">Estudia para ICFES saber Pro</h1>
                 </div>
-               <div  class="w-full shadow-md rounded border mt-5">
-                <button id="dropdownButton" class="px-10 items-center flex justify-between w-full h-10 hover:bg-blue-200 transition-colors">
-                    <h1 class="text-2xl font-medium">Módulo de lectura crítica</h1>
-                    <Icon id="flecha" class="size-8" name="material-symbols:keyboard-arrow-down" />
-                </button>
-                    <div id="dropdownMenu" class="px-10 hidden mt-5">
-                         <p>Este módulo evalúa las capacidades de entender, interpretar y tomar posturas críticas frente a un texto. Se centra en las siguientes tres competencias:</p>
-                         <ul class="list-disc ml-8 mt-3 mb-3">
-                             <li>Identificar y entender los eventos, ideas, afirmaciones y demás elementos que conforman un texto.</li>
-                             <li>Comprender cómo se enlazan las partes de un texto para darle un sentido global.</li>
-                             <li>Reflexionar a partir de un texto y evaluar su contenido.</li>
-                         </ul>
-                         <div class="flex text-blue-700 hover:text-blue-400 gap-1 pb-3" >
-                             <Icon class="relative mt-1 size-4 " name="material-symbols:picture-as-pdf" />
-                             <a class="" href="/public/cuadernillos/lectura-critica.pdf">Cuadernillo lectura crítica</a>
-                         </div>
-                     </div>
-               </div>
-               <div  class="w-full shadow-md rounded border mt-5">
-                <button id="dropdownButton1" class="px-10 items-center flex justify-between w-full h-10 hover:bg-blue-200 transition-colors">
-                    <h1 class="text-2xl font-medium">Módulo de razonamiento cuantitativo</h1>
-                    <Icon id="flecha" class="size-8" name="material-symbols:keyboard-arrow-down" />
-                </button>
-                    <div id="dropdownMenu1" class="px-10 hidden mt-5">
-                         <p>Este módulo se centra en evaluar las siguientes competencias:</p>
-                         <ul class="list-disc ml-8 mt-3 mb-3">
-                             <li>Interpretación y representación de datos cuantitativos en distintos formatos: tablas, gráficos, esquemas, etc.</li>
-                             <li>Formulación y ejecución de la solución a un problema.</li>
-                             <li>Argumentación, en donde se sustente la validez de la solución propuesta.</li>
-                         </ul>
-                         <p>Además, este módulo incluye tres categorías de conocimientos transversales:</p>
-                         <ul class="list-disc ml-8 mt-3 mb-3">
-                             <li>Estadística</li>
-                             <li>Geometría</li>
-                             <li>Álgebra y cálculo</li>
-                         </ul>
-                         <div class="flex text-blue-700 hover:text-blue-400 gap-1 pb-3" >
-                             <Icon class="relative mt-1 size-4 " name="material-symbols:picture-as-pdf" />
-                             <a class="" href="/public/cuadernillos/razonamiento-cuantitativo.pdf">Cuadernillo de razonamiento cuantitativo</a>
-                         </div>
-                     </div>
-               </div>
-               <div  class="w-full shadow-md rounded border mt-5">
-                <button id="dropdownButton2" class="px-10 items-center flex justify-between w-full h-10 hover:bg-blue-200 transition-colors">
-                    <h1 class="text-2xl font-medium">Módulo de competencias ciudadanas</h1>
-                    <Icon id="flecha" class="size-8" name="material-symbols:keyboard-arrow-down" />
-                </button>
-                    <div id="dropdownMenu2" class="px-10 hidden mt-5">
-                         <p>Este módulo evalúa el conocimiento que tiene una persona de su entorno social y político, así como de sus deberes y derechos, y las habilidades que tiene para buscar soluciones a problemáticas en la comunidad, de modo que utilice sus conocimientos y actitudes para construir bienestar en la sociedad.</p>
-                         <p class="mt-3">Se centra en las siguientes cuatro competencias:</p>
-                         <ul class="list-disc ml-8 mt-3 mb-3">
-                             <li>Pensamiento social: que se refiere al conocimiento de la Constitución Política de Colombia.</li>
-                             <li>Argumentación: en la que el estudiante debe analizar la validez de un discurso frente a una problemática social.</li>
-                             <li>Multiperspectivismo: que es la capacidad del estudiante de observar una problemática desde distintas perspectivas.</li>
-                             <li>Pensamiento sistémico: en donde el estudiante debe comprender una realidad social entendiendo todas las dimensiones que la conforman y evaluar la aplicabilidad de una posible solución.</li>
-                         </ul>
-                         <div class="flex text-blue-700 hover:text-blue-400 gap-1 pb-3" >
-                             <Icon class="relative mt-1 size-4 " name="material-symbols:picture-as-pdf" />
-                             <a class="" href="/public/cuadernillos/competencias-ciudadanas.pdf">Cuadernillo de competencias ciudadanas</a>
-                         </div>
-                     </div>
-               </div>
-               <div  class="w-full shadow-md rounded border mt-5">
-                <button id="dropdownButton3" class="px-10 items-center flex justify-between w-full h-10 hover:bg-blue-200 transition-colors">
-                    <h1 class="text-2xl font-medium">Módulo de comunicación escrita</h1>
-                    <Icon id="flecha" class="size-8" name="material-symbols:keyboard-arrow-down" />
-                </button>
-                    <div id="dropdownMenu3" class="px-10 hidden mt-5">
-                         <p>Este módulo evalúa la capacidad del estudiante de comunicar ideas frente a un tema dado.</p>
-                         <p class="mt-3">Se centra en los siguientes tres aspectos:</p>
-                         <ul class="list-disc ml-8 mt-3 mb-3">
-                             <li>Planteamiento que se hace en el texto, es decir, que haya un desarrollo claro de los planteamientos frente al tema propuesto.</li>
-                             <li>Organización del texto, de manera que se observe que el estudiante sabe expresar sus ideas de una forma ordenada y las cohesionas adecuadamente usando secuencialidad, signos de puntuación, conectores, etc.</li>
-                             <li>Forma de expresión, esto es, la manera en la que se sustenta una opinión y se exponen los argumentos que la justifican y explican su punto de vista.</li>
-                         </ul>
-                         <div class="flex text-blue-700 hover:text-blue-400 gap-1 pb-3" >
-                             <Icon class="relative mt-1 size-4 " name="material-symbols:picture-as-pdf" />
-                             <a class="" href="/public/cuadernillos/comunicacion-escrita.pdf">Cuadernillo de comunicación escrita</a>
-                         </div>
-                     </div>
-               </div>
-               <div  class="w-full shadow-md rounded border mt-5">
-                <button id="dropdownButton4" class="px-10 items-center flex justify-between w-full h-10 hover:bg-blue-200 transition-colors">
-                    <h1 class="text-2xl font-medium">Módulo de inglés</h1>
-                    <Icon id="flecha" class="size-8" name="material-symbols:keyboard-arrow-down" />
-                </button>
-                    <div id="dropdownMenu4" class="px-10 hidden mt-5">
-                         <p>Este módulo evalúa la habilidad para comunicarse de forma efectiva en inglés. Se busca que el estudiante entienda la información, sea capaz de completar conversaciones, leer artículos y responder a preguntas para las que necesita comprender una situación determinada.</p>
-                         <p class="mt-3 mb-3">Y antes de terminar de darte toda esta información, te mostramos el número de preguntas por módulo.</p>
-                         <div class="flex text-blue-700 hover:text-blue-400 gap-1 pb-3" >
-                             <Icon class="relative mt-1 size-4 " name="material-symbols:picture-as-pdf" />
-                             <a class="" href="/public/cuadernillos/ingles.pdf">Cuadernillo de inglés</a>
-                         </div>
-                     </div>
-               </div>
+                <div class="text-xl space-y-6">
+                    <p>La forma correcta de como estudiar para el icfes, es mirar cada área que evalúa y repasar los temas específicos. Aquí encontraras vídeos interactivos que explican la temática y solución de problemas. Una vez adquiridos los conocimientos, podrás aplicarlos para resolver las preguntas del examen saber pro.</p>
+                    <div class="w-full items-center justify-center flex">
+                        <img class="w-[800px] h-[400px] my-10" src="/public/banner.webp" alt="">
+                    </div>
+                    <p>Usualmente lo primero que pensamos cuando nos dicen que debemos estudiar para este examen, es en todo el proceso de estudio desde primer semestre de la Universidad, esto te puede preocupar y hacer que te estanques por la impotencia de estudiar en un tiempo dado, hasta el examen, todo lo que recorrimos en años.</p>
+                    <p>Pues no es así, debes saber que no es necesario repasar todo lo visto en tu carrera (ademas eso seria muy difícil) ya que la prueba evalúa ciertos conocimientos. La clave es enfocarse en los componentes de los temas. Por ejemplo: Competencias ciudadanas, comunicacion escrita, ingles, lectura critica y razonamiento cuantitativo.</p>
+                    <p><strong>¿Por donde empezar a prepararse?</strong> Tendrás subportales donde podrás empezar, y recuerda, la forma optima de estudiar para el icfes saber pro, es con un repaso de los temas, asimilar los conceptos, ver y resolver algunas preguntas para entender la metodología.  </p>
+                    <h2 class="font-bold text-2xl">¿Que temas estudiar para el icfes pro?</h2>
+                    <p>¡Esta es la parte mas poderosa! A continuación encontraras un portal para cada tipo de prueba para que puedas estudiar. Contienen el temario, la teoría, vídeos interactivos y solución de problemas, todo para que te prepares de forma adecuada, selecciona el que desees repasar y empieza.</p>
+                    <p>Nuestra metodología es, en vez de usar mucha información de manera textual, (lo que seria terrible porque la barra de desplazamiento seria diminuta) darla en vídeos interactivos, esto promueve el interés y la participación, espero les ayude.</p>
+                </div>
+                <div class="w-full items-center justify-between flex my-10">
+                    <div class="w-[250px] h-[350px] py-10 bg-slate-200 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer transition-all">
+                        <div class="items-center justify-center flex w-full">
+                            <img class="w-[190px] h-[190px]" src="/public/razonamiento-cuantitativo.png" alt="">
+                        </div>
+                        <div class="items-center justify-center flex ">
+                            <span class="px-10 text-2xl  text-center">Razonamineto Cuantitativo</span>
+                        </div>
+                    </div> 
+                    <div class="w-[250px] h-[350px] py-10 bg-slate-200 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer transition-all">
+                        <div class="items-center justify-center flex w-full">
+                            <img class="w-[190px] h-[190px]" src="/public/lectura-critica.png" alt="">
+                        </div>
+                        <div class="items-center justify-center flex ">
+                            <span class="px-10 text-2xl  text-center">Lectura Critica</span>
+                        </div>
+                    </div> 
+                    <div class="w-[250px] h-[350px] py-10 bg-slate-200 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer transition-all">
+                        <div class="items-center justify-center flex w-full">
+                            <img class="w-[190px] h-[190px]" src="/public/comunicacion-escrita.png" alt="">
+                        </div>
+                        <div class="items-center justify-center flex ">
+                            <span class="px-10 text-2xl  text-center">Comunicacion escrita</span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="w-full items-center justify-around flex mb-10">
+                    <div class="w-[250px] h-[350px] py-10 bg-slate-200 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer transition-all">
+                        <div class="items-center justify-center flex w-full">
+                            <img class="w-[190px] h-[190px]" src="/public/competencias-ciudadanas.png" alt="">
+                        </div>
+                        <div class="items-center justify-center flex ">
+                            <span class="px-10 text-2xl  text-center">Competencias Ciudadanas</span>
+                        </div>
+                    </div> 
+                    <div class="w-[250px] h-[350px] py-10 bg-slate-200 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer transition-all">
+                        <div class="items-center justify-center flex w-full">
+                            <img class="w-[190px] h-[190px]" src="/public/ingles.png" alt="">
+                        </div>
+                        <div class="items-center justify-center flex ">
+                            <span class="px-10 text-2xl  text-center">Ingles</span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="text-xl space-y-6">
+                    <h1 class="font-bold text-2xl">¿Que mas hacer para prepararse para el examen?</h1>
+                    <p>Pues eso seria todo, con lo ya visto tienes para rato. Esperamos que este material les sea de utilidad y recuerden prepararse muy bien. No se conformen con la información que encontraran en esta pagina, busquen mas en otras paginas o establecimientos para reforzar tus conocimientos. La meta de un buen resultado solo se logra con esfuerzo.</p>
+                    <p>Para terminar, un buen consejo que puedo ofrecer, es que en este periodo en que repasaran para el examen del icfes saber pro, tengan a mano un cuaderno para anotar las observaciones y formulas mas esenciales. Lo anterior para estudiarlas y recordarlas cuando sea necesario, o faltando unos días para la prueba.</p>
+                </div>
+                <div class="space-y-4 mt-10 text-xl">
+                    <h2 class="text-3xl font-bold">Usa nuestra IA!</h2>
+                    <p>Con ayuda de ella podras resumir archivos pdf y pedirle que te haga examenes o preguntas relacionadas con los archivos cargados.</p>
+                </div>
+                <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+                    <div class="bg-white border-dashed border-2 border-blue-500 rounded-lg p-6 w-full max-w-lg text-center relative">
+                      <div class="flex flex-col items-center">
+                        <div class="bg-purple-200 p-4 rounded-full mb-4">
+                          <img class="h-16 w-16" src="/public/Logo (3).png" alt="">
+                        </div>
+                        <p class="text-gray-700 font-medium mb-4">Haz clic para subir o arrastra un archivo PDF aquí</p>
+                        <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700">
+                          Subir PDF
+                        </button>
+                      </div>
+                      <div class="absolute top-0 right-0 mt-2 mr-2 text-blue-500">
+                        PDF File →
+                      </div>
+                    </div>
+                  </div>
             </section>    
     </section>
 </Menu2>
 <script src="/src/layouts/script.js"></script>
-<script>
-    const dropdownButton = document.getElementById("dropdownButton");
-    const dropdownMenu = document.getElementById("dropdownMenu");
-    const dropdownButton1 = document.getElementById("dropdownButton1");
-    const dropdownMenu1 = document.getElementById("dropdownMenu1");
-    const dropdownButton2 = document.getElementById("dropdownButton2");
-    const dropdownMenu2 = document.getElementById("dropdownMenu2");
-    const dropdownButton3 = document.getElementById("dropdownButton3");
-    const dropdownMenu3 = document.getElementById("dropdownMenu3");
-    const dropdownButton4 = document.getElementById("dropdownButton4");
-    const dropdownMenu4 = document.getElementById("dropdownMenu4");
-    const flecha = document.getElementById("flecha");
-    dropdownButton.addEventListener("click", () => {
-			dropdownMenu.classList.toggle("hidden");
-			dropdownButton.classList.toggle("hover:bg-blue-200");
-            flecha.classList.toggle("girar")
-			});
-    dropdownButton1.addEventListener("click", () => {
-			dropdownMenu1.classList.toggle("hidden");
-            dropdownButton1.classList.toggle("hover:bg-blue-200")
-            flecha.classList.toggle("girar")
-			});
-    dropdownButton2.addEventListener("click", () => {
-			dropdownMenu2.classList.toggle("hidden");
-            dropdownButton2.classList.toggle("hover:bg-blue-200")
-            flecha.classList.toggle("girar")
-			});
-    dropdownButton3.addEventListener("click", () => {
-			dropdownMenu3.classList.toggle("hidden");
-            dropdownButton3.classList.toggle("hover:bg-blue-200")
-            flecha.classList.toggle("girar")
-			});
-    dropdownButton4.addEventListener("click", () => {
-			dropdownMenu4.classList.toggle("hidden");
-            dropdownButton4.classList.toggle("hover:bg-blue-200")
-            flecha.classList.toggle("girar")
-			});
-</script>
 <style>
     .mini-main-i {
         margin-left: 80px;

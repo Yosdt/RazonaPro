@@ -1,0 +1,27 @@
+---
+const { title } = Astro.props;
+import { Icon } from 'astro-icon/components'
+---
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/cabeza.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+</head>
+<header id="header" class="bg-white px-10">
+  <div class="flex justify-between items-center px-4 h-11">
+    <div class="mt-3">
+      <a href="/">
+        <img class="w-[200px]" src="/public/razonapro-nobg.png" alt="" />
+      </a>
+    </div>
+    <nav class="flex h-full">
+      <a
+        class="flex items-center h-full px-2 hover:bg-blue-400 hover:text-white transition-colors"
+        href="/test">salir</a
+      >
+    </nav>
+  </div>
+</header>

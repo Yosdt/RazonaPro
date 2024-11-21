@@ -1,0 +1,75 @@
+---
+import Menu2 from "../layouts/Menu2.astro";
+import { Icon } from 'astro-icon/components'
+---
+
+<Menu2 title="RazonaPro">
+    <section
+        id="main"
+        class="ml-64 p-5 transition-all duration-500 ease-in-out ">
+            <section class="w-full p-10 bg-white rounded items-center justify-center flex">
+                <div class="w-full">
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-6 w-full">
+                      
+                      <img src="/public/perfil.jpg" alt="Foto de usuario" class="w-28 h-28 rounded-lg object-cover">
+                      
+                      
+                      <div class="flex-1">
+                        <h2 class="text-xl font-bold text-blue-800">Fabian</h2>
+                        <p class="text-sm text-gray-500">Bonus de puntos 24h</p>
+                        
+                        
+                        <div class="bg-gray-200 rounded-full h-2 w-full mt-2">
+                          <div class="bg-blue-600 h-2 rounded-full" style="width: 70%;"></div>
+                        </div>
+                  
+                        
+                        <div class="flex items-center space-x-6 mt-4">
+                          
+                          <div class="flex flex-col items-center">
+                            <div class="bg-gray-100 p-2 rounded-lg">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m1 9H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2z" />
+                              </svg>
+                            </div>
+                            <p class="text-sm font-semibold mt-1">27</p>
+                            <p class="text-xs text-gray-500">Maximo nivel</p>
+                          </div>
+                          
+                          
+                          <div class="flex flex-col items-center">
+                            <div class="bg-gray-100 p-2 rounded-lg">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zM12 14v6m-6 0h12" />
+                              </svg>
+                            </div>
+                            <p class="text-sm font-semibold mt-1">27min</p>
+                            <p class="text-xs text-gray-500">mejor tiempo</p>
+                          </div>
+                          
+                          
+                          <div class="flex flex-col items-center">
+                            <div class="bg-gray-100 p-2 rounded-lg">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p class="text-sm font-semibold mt-1">100</p>
+                            <p class="text-xs text-gray-500">Respuestas correctas</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="/examen" class="items-center justify-center flex mt-10">
+                        <button class="bg-blue-700 w-60 h-16 rounded-xl text-2xl text-white font-semibold hover:bg-opacity-90">Iniciar Prueba</button>
+                    </a>
+                </div>
+            </section>    
+    </section>
+</Menu2>
+<script src="/src/layouts/script.js"></script>
+<style>
+    .mini-main-i {
+        margin-left: 80px;
+    }
+</style>
